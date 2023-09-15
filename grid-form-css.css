@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.container{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+.heading {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.details {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="tel"],
+input[type="url"],
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type="submit"]{
+    background-color: rgb(7, 2, 152);
+    color: #fff;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+input[type="submit"]:hover{
+    background-color: rgb(68, 65, 141);
+}
+@media screen and (max-width: 600px) {
+
+    .heading,
+    .detail,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
